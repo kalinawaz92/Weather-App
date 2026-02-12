@@ -7,7 +7,25 @@ A simple Weather App built with **Flutter** that displays current weather inform
 - Fetch current weather data from a weather API (e.g., OpenWeatherMap)
 - Search weather by city
 - Clean and responsive UI
-- Multi‑platform support (mobile & desktop & web) :contentReference[oaicite:2]{index=2}
 
 ## 📦 Project Structure
+```
+lib/
+├── Api_Model/
+│   ├── callApi.dart
+│   └── users_api_model.dart
+│
+├── Weather/
+│   ├── Weekly/
+│   │   ├── api_model_weekly.dart
+│   │   └── weeklyWeather.dart
+│   │
+│   ├── api_model.dart
+│   ├── api_model_hourly.dart
+│   ├── weather.dart
+│   └── weatherAPI.dart
+│
+└── main.dart
+
+```
 
