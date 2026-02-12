@@ -1,0 +1,191 @@
+name: weatherapp
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  http: ^1.5.0
+  google_fonts: ^6.3.2
+  geolocator: ^14.0.2
+  geocoding: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/Images/WeatherIcons/1000day.png
+    - assets/Images/WeatherIcons/1000night.png
+    - assets/Images/WeatherIcons/1003day.png
+    - assets/Images/WeatherIcons/1003night.png
+    - assets/Images/WeatherIcons/1006day.png
+    - assets/Images/WeatherIcons/1006night.png
+    - assets/Images/WeatherIcons/1009day.png
+    - assets/Images/WeatherIcons/1009night.png
+    - assets/Images/WeatherIcons/1030day.png
+    - assets/Images/WeatherIcons/1030night.png
+    - assets/Images/WeatherIcons/1063day.png
+    - assets/Images/WeatherIcons/1063night.png
+    - assets/Images/WeatherIcons/1066day.png
+    - assets/Images/WeatherIcons/1066night.png
+    - assets/Images/WeatherIcons/1069day.png
+    - assets/Images/WeatherIcons/1069night.png
+    - assets/Images/WeatherIcons/1072day.png
+    - assets/Images/WeatherIcons/1072night.png
+    - assets/Images/WeatherIcons/1087day.png
+    - assets/Images/WeatherIcons/1087night.png
+    - assets/Images/WeatherIcons/1114day.png
+    - assets/Images/WeatherIcons/1114night.png
+    - assets/Images/WeatherIcons/1117day.png
+    - assets/Images/WeatherIcons/1117night.png
+    - assets/Images/WeatherIcons/1135day.png
+    - assets/Images/WeatherIcons/1135night.png
+    - assets/Images/WeatherIcons/1147day.png
+    - assets/Images/WeatherIcons/1147night.png
+    - assets/Images/WeatherIcons/1150day.png
+    - assets/Images/WeatherIcons/1150night.png
+    - assets/Images/WeatherIcons/1153day.png
+    - assets/Images/WeatherIcons/1153night.png
+    - assets/Images/WeatherIcons/1168day.png
+    - assets/Images/WeatherIcons/1168night.png
+    - assets/Images/WeatherIcons/1171day.png
+    - assets/Images/WeatherIcons/1171night.png
+    - assets/Images/WeatherIcons/1180day.png
+    - assets/Images/WeatherIcons/1180night.png
+    - assets/Images/WeatherIcons/1183day.png
+    - assets/Images/WeatherIcons/1183night.png
+    - assets/Images/WeatherIcons/1186day.png
+    - assets/Images/WeatherIcons/1186night.png
+    - assets/Images/WeatherIcons/1189day.png
+    - assets/Images/WeatherIcons/1189night.png
+    - assets/Images/WeatherIcons/1192day.png
+    - assets/Images/WeatherIcons/1192night.png
+    - assets/Images/WeatherIcons/1195day.png
+    - assets/Images/WeatherIcons/1195night.png
+    - assets/Images/WeatherIcons/1198day.png
+    - assets/Images/WeatherIcons/1198night.png
+    - assets/Images/WeatherIcons/1201day.png
+    - assets/Images/WeatherIcons/1201night.png
+    - assets/Images/WeatherIcons/1204day.png
+    - assets/Images/WeatherIcons/1204night.png
+    - assets/Images/WeatherIcons/1207day.png
+    - assets/Images/WeatherIcons/1207night.png
+    - assets/Images/WeatherIcons/1210day.png
+    - assets/Images/WeatherIcons/1210night.png
+    - assets/Images/WeatherIcons/1213day.png
+    - assets/Images/WeatherIcons/1213night.png
+    - assets/Images/WeatherIcons/1216day.png
+    - assets/Images/WeatherIcons/1216night.png
+    - assets/Images/WeatherIcons/1219day.png
+    - assets/Images/WeatherIcons/1219night.png
+    - assets/Images/WeatherIcons/1222day.png
+    - assets/Images/WeatherIcons/1222night.png
+    - assets/Images/WeatherIcons/1225day.png
+    - assets/Images/WeatherIcons/1225night.png
+    - assets/Images/WeatherIcons/1237day.png
+    - assets/Images/WeatherIcons/1237night.png
+    - assets/Images/WeatherIcons/1240day.png
+    - assets/Images/WeatherIcons/1240night.png
+    - assets/Images/WeatherIcons/1243day.png
+    - assets/Images/WeatherIcons/1243night.png
+    - assets/Images/WeatherIcons/1246day.png
+    - assets/Images/WeatherIcons/1246night.png
+    - assets/Images/WeatherIcons/1249day.png
+    - assets/Images/WeatherIcons/1249night.png
+    - assets/Images/WeatherIcons/1252day.png
+    - assets/Images/WeatherIcons/1252night.png
+    - assets/Images/WeatherIcons/1255day.png
+    - assets/Images/WeatherIcons/1255night.png
+    - assets/Images/WeatherIcons/1258day.png
+    - assets/Images/WeatherIcons/1258night.png
+    - assets/Images/WeatherIcons/1261day.png
+    - assets/Images/WeatherIcons/1261night.png
+    - assets/Images/WeatherIcons/1264day.png
+    - assets/Images/WeatherIcons/1264night.png
+    - assets/Images/WeatherIcons/1273day.png
+    - assets/Images/WeatherIcons/1273night.png
+    - assets/Images/WeatherIcons/1276day.png
+    - assets/Images/WeatherIcons/1276night.png
+    - assets/Images/WeatherIcons/1279day.png
+    - assets/Images/WeatherIcons/1279night.png
+    - assets/Images/WeatherIcons/1282day.png
+    - assets/Images/WeatherIcons/1282night.png
+    - assets/Images/WeatherIcons/default.png
+    - assets/Images/WeatherIcons/sunrise.png
+    - assets/Images/WeatherIcons/sunset.png
+    - assets/Images/WeatherIcons/wind.png
+
+    # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
